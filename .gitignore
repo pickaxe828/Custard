@@ -1,2 +1,3 @@
 .space
-**/.env
+**/env.yml
+**/creds.json

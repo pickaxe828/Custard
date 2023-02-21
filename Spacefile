@@ -2,7 +2,9 @@
 v: 0
 app_name: "Custard"
 micros:
-  - name: custard-python-bot
-    src: ./src/custard-discord-bot
+  - name: custard-discord-bot
+    src: ./src/discord-bot
     engine: python3.9
     primary: true
+    public_routes:
+      - "/interactions"
