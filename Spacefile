@@ -16,4 +16,4 @@ micros:
       - build
     run: "npm run start"
     public_routes:
-      - "/"
+      - "/api"
