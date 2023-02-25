@@ -8,3 +8,12 @@ micros:
     primary: true
     public_routes:
       - "/interactions"
+
+  - name: custard-backend
+    src: ./src/backend
+    engine: nodejs16
+    include:
+      - build
+    run: "npm run start"
+    public_routes:
+      - "/"
