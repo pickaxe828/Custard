@@ -1,6 +1,6 @@
-.space
+.space/
+node_modules/
+build/
+
 **/env.yml
 **/creds.json
-**/node_modules
-**/*.js
-**/*.js.map

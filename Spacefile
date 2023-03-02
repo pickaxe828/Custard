@@ -1,6 +1,6 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
-app_name: "Custard"
+app_name: Custard
 micros:
   - name: custard-discord-bot
     src: ./src/discord-bot
@@ -9,11 +9,13 @@ micros:
     public_routes:
       - "/interactions"
 
-  - name: custard-backend
+  - name: api
     src: ./src/backend
     engine: nodejs16
+    commands:
+      - npm run build
     include:
       - build
-    run: "npm run start"
+    run: "node build/index.js"
     public_routes:
-      - "/api"
+      - "/api/*"
