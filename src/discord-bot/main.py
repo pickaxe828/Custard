@@ -53,9 +53,8 @@ async def verify(interaction: discohook.Interaction):
     view.add_button_row(
         discohook.Button(
             label = "Press me to Verify! ✅", 
-            url = "https://google.com",
-            # url = BASE_URL + "verify/" + session_id,
-            style = discohook.ButtonStyle.green
+            url = BASE_URL + "verify/" + session_id,
+            style = discohook.ButtonStyle.link
         )
     )
     embed = discohook.Embed(
